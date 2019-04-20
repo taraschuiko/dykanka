@@ -1,5 +1,89 @@
-$body-color: blue;
+@import "./colors.scss";
+@import "./fonts.scss";
 
 body {
-  color: $body-color;
+  background: $off-white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.nav {
+  background-image: url("../../assets/nav-bg.png");
+  background-repeat: repeat-x;
+  height: 65px;
+  align-items: center;
+  padding-bottom: 10px;
+
+  &__menu,
+  &__language {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: inline;
+
+      a {
+        display: inline;
+        font-family: "Fira Sans";
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        text-align: left;
+      }
+    }
+  }
+
+  &__menu a {
+    color: $off-white;
+  }
+
+  &__language {
+    a {
+      color: #bca78b;
+    }
+
+    &_active {
+      color: $off-white !important;
+    }
+  }
+
+  &__menu li:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  &__language li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.header {
+  background: url("../../assets/header-bg.png");
+  background-size: contain;
+  height: 663px;
+
+  &__logo {
+    margin-top: 80px;
+  }
+
+  &__text {
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $brown;
+  }
 }
