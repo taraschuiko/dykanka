@@ -9,7 +9,7 @@ img {
   max-width: 100%;
 }
 
-.dark-text {
+.text {
   font-family: "Fira Sans";
   font-size: 18px;
   font-weight: 300;
@@ -18,7 +18,16 @@ img {
   line-height: 1.33;
   letter-spacing: normal;
   text-align: left;
+}
+
+.dark-text {
+  @extend .text;
   color: $greyish-brown;
+}
+
+.light-text {
+  @extend .text;
+  color: $off-white;
 }
 
 .container-fluid {
@@ -257,6 +266,64 @@ img {
         color: $green;
         font-weight: bold;
       }
+    }
+  }
+}
+
+.kinds-sections {
+  line-height: 1.56;
+
+  .kind-section__title {
+    font-size: 48px;
+    font-family: "PT Serif";
+    margin-bottom: 60px;
+  }
+
+  .kind-section__description {
+    margin-bottom: 60px;
+  }
+
+  .kind-section__list {
+    padding-left: 20px;
+    list-style-type: circle;
+    margin-bottom: 60px;
+  }
+}
+
+.salads {
+  @extend .kinds-sections;
+  background: $green;
+  background-image: url("../../assets/salads-bg.png");
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: -140px 76%;
+  padding-top: 111px;
+  @extend .light-text;
+
+  .kind-section__list {
+    color: #bca78b;
+
+    span {
+      color: $off-white
+    }
+  }
+}
+
+.frying {
+  @extend .kinds-sections;
+  background: $off-white;
+  background-image: url("../../assets/frying-bg.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 110% 75%;
+  padding-top: 80px;
+  @extend .dark-text;
+
+  .kind-section__list {
+    color: #bca78b;
+
+    span {
+      color: $greyish-brown
     }
   }
 }
