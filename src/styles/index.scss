@@ -9,6 +9,18 @@ img {
   max-width: 100%;
 }
 
+.dark-text {
+  font-family: "Fira Sans";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: $greyish-brown;
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -119,20 +131,132 @@ img {
 
 .experience {
   padding-top: 78px;
+  background: url("../../assets/experience-img.png");
+  padding-bottom: 470px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 
   p {
-    font-family: "Fira Sans";
+    @extend .dark-text;
     font-size: 24px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
     text-align: center;
-    color: $greyish-brown;
   }
 
   img {
     margin: 0 auto;
+  }
+}
+
+.kinds {
+  padding-top: 80px;
+  margin-bottom: -100px;
+
+  &__title {
+    @extend .dark-text;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @extend .dark-text;
+    font-family: "PT Serif";
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  &-info {
+    margin-top: 60px;
+
+    &__left-text {
+      padding-top: 95px;
+      text-align: right;
+
+      p {
+        position: relative;
+
+        &:before {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 1px;
+          background: $brown;
+          position: absolute;
+          top: 12px;
+          right: -125px;
+          z-index: 2;
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          background: $brown;
+          position: absolute;
+          top: 8px;
+          right: -125px;
+          border-radius: 50%;
+          z-index: 2;
+        }
+      }
+
+      p:not(:last-child) {
+        margin-bottom: 55px;
+      }
+
+      span {
+        color: #ce1417;
+        font-weight: bold;
+      }
+    }
+
+    &__left-bottle {
+      text-align: right;
+      z-index: 1;
+    }
+
+    &__right-text {
+      padding-top: 95px;
+
+      p {
+        position: relative;
+
+        &:before {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 1px;
+          background: $brown;
+          position: absolute;
+          top: 12px;
+          left: -125px;
+          z-index: 2;
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          background: $brown;
+          position: absolute;
+          top: 8px;
+          left: -125px;
+          border-radius: 50%;
+          z-index: 2;
+        }
+      }
+
+      p:not(:last-child) {
+        margin-bottom: 254px;
+      }
+
+      span {
+        color: $green;
+        font-weight: bold;
+      }
+    }
   }
 }
