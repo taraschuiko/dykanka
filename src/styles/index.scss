@@ -403,3 +403,27 @@ img {
     text-align: center;
   }
 }
+
+.quality {
+  @extend .dark-text;
+  padding: 80px 0 56px 0;
+
+  &__title {
+    font-family: PTSerif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 68px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
