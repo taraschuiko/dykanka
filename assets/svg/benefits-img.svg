@@ -1,11 +1,13 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="13.203cm" height="22.904cm">
-<path fill-rule="evenodd"  fill="rgb(242, 210, 79)"
- d="M186.755,585.756 C252.927,585.756 310.078,531.335 310.078,465.096 C310.078,367.506 210.054,330.341 186.755,158.209 C163.456,330.341 63.434,366.189 63.434,465.096 C63.434,531.335 120.587,585.756 186.755,585.756 Z"/>
-<path fill-rule="evenodd"  stroke="rgb(244, 208, 0)" stroke-width="1.5px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.329" fill="none"
- d="M186.754,646.035 C285.634,646.035 371.033,564.716 371.033,465.735 C371.033,319.909 221.569,264.374 186.754,7.161 C151.940,264.374 2.478,317.941 2.478,465.735 C2.478,564.716 87.881,646.035 186.754,646.035 Z"/>
-<path fill-rule="evenodd"  stroke="rgb(244, 208, 0)" stroke-width="1.5px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.549" fill="none"
- d="M186.755,616.617 C270.027,616.617 341.948,548.132 341.948,464.774 C341.948,341.964 216.075,295.194 186.755,78.578 C157.435,295.194 31.563,340.307 31.563,464.774 C31.563,548.132 103.487,616.617 186.755,616.617 Z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="371px" height="639px" viewBox="0 0 371 639" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="benefits-img" transform="translate(2.000000, 0.000000)">
+            <path d="M184.755,578.756 C250.927,578.756 308.078,524.335 308.078,458.096 C308.078,360.506 208.054,323.341 184.755,151.209 C161.456,323.341 61.434,359.189 61.434,458.096 C61.434,524.335 118.587,578.756 184.755,578.756 Z" id="Path" fill="#F2D24F"></path>
+            <path d="M184.754,639.035 C283.634,639.035 369.033,557.716 369.033,458.735 C369.033,312.909 219.569,257.374 184.754,0.161 C149.94,257.374 0.478,310.941 0.478,458.735 C0.478,557.716 85.881,639.035 184.754,639.035 Z" id="Path" stroke="#F4D000" stroke-width="1.5" opacity="0.329"></path>
+            <path d="M184.755,609.617 C268.027,609.617 339.948,541.132 339.948,457.774 C339.948,334.964 214.075,288.194 184.755,71.578 C155.435,288.194 29.563,333.307 29.563,457.774 C29.563,541.132 101.487,609.617 184.755,609.617 Z" id="Path" stroke="#F4D000" stroke-width="1.5" opacity="0.549"></path>
+        </g>
+    </g>
 </svg>
