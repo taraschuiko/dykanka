@@ -53,6 +53,24 @@ img {
   height: 65px;
   align-items: center;
   padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+
+  &__mobile-icon {
+    display: block;
+    cursor: pointer;
+
+    img {
+      padding: 8px 4px;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 
   &__menu,
   &__language {
@@ -82,12 +100,16 @@ img {
   }
 
   &__language {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+
     a {
-      color: #bca78b;
+      color: $off-white;
     }
 
     &_active {
-      color: $off-white !important;
+      color: #bca78b !important;
     }
   }
 
@@ -98,12 +120,51 @@ img {
   &__language li:not(:last-child) {
     margin-right: 30px;
   }
+
+  &__menu {
+    @media (max-width: 767.98px) {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 3;
+      background: $green;
+      max-width: none;
+      width: 100vw;
+      padding-bottom: 56px;
+      position: fixed;
+      top: 56px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      li {
+        display: block;
+        text-align: center;
+        margin-right: 0 !important;
+
+        &:not(:last-child) {
+          margin-bottom: 48px;
+        }
+
+        a {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  &__menu_active {
+    @media (max-width: 767.98px) {
+      display: flex;
+    }
+  }
 }
 
 .header {
   background: url("../../assets/header-bg.png");
   background-size: cover;
   height: 663px;
+  padding-top: 65px;
 
   &__logo {
     margin-top: 80px;
