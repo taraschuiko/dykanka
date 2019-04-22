@@ -37,18 +37,18 @@ img {
 .top-wave {
   height: 65px;
   width: 100%;
-  background: url("../../assets/top-wave.png");
+  background: url("../assets/top-wave.png");
   margin-top: -5px;
 }
 
 .bottom-wave {
   height: 65px;
   width: 100%;
-  background: url("../../assets/bottom-wave.png");
+  background: url("../assets/bottom-wave.png");
 }
 
 .nav {
-  background-image: url("../../assets/bottom-wave.png");
+  background-image: url("../assets/bottom-wave.png");
   background-repeat: repeat-x;
   height: 65px;
   align-items: center;
@@ -161,7 +161,7 @@ img {
 }
 
 .header {
-  background: url("../../assets/header-bg.png");
+  background: url("../assets/header-bg.png");
   background-size: cover;
   height: 663px;
   padding-top: 65px;
@@ -201,7 +201,7 @@ img {
 
 .experience {
   padding-top: 78px;
-  background: url("../../assets/experience-img.png");
+  background: url("../assets/experience-img.png");
   padding-bottom: 470px;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -354,7 +354,7 @@ img {
 .salads {
   @extend .kinds-sections;
   background: $green;
-  background-image: url("../../assets/salads-bg.png");
+  background-image: url("../assets/salads-bg.png");
   background-repeat: no-repeat;
   background-size: 45%;
   background-position: -140px 76%;
@@ -373,7 +373,7 @@ img {
 .frying {
   @extend .kinds-sections;
   background: $off-white;
-  background-image: url("../../assets/frying-bg.png");
+  background-image: url("../assets/frying-bg.png");
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: 110% 75%;
@@ -413,7 +413,7 @@ img {
   &__cards {
     padding-top: 30px;
     margin-top: 25px;
-    background: url("../../assets/svg/benefits-img.svg");
+    background: url("../assets/svg/benefits-img.svg");
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 32%;
@@ -429,7 +429,7 @@ img {
 
   &__img {
     text-align: center;
-    background: url("../../assets/svg/benefits-img.svg");
+    background: url("../assets/svg/benefits-img.svg");
     margin-top: -640px;
     height: 640px;
     background-repeat: no-repeat;
