@@ -7,7 +7,6 @@ var menuOpenIcon = "./assets/svg/menu_1.svg";
 var menuCloseIcon = "./assets/svg/close_1.svg";
 
 mobileMenuIcon.addEventListener("click", () => {
-  console.log(mobileMenuIcon.attributes);
   if (!mobileMenu.classList.contains("nav__menu_active")) {
     mobileMenu.classList.add("nav__menu_active");
     mobileMenuIcon.attributes[0].value = menuCloseIcon;

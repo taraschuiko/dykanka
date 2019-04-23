@@ -180,13 +180,17 @@ img {
     letter-spacing: normal;
     text-align: left;
     color: $brown;
+
+    @media (max-width: 575.98px) {
+      font-size: 20px;
+    }
   }
 }
 
 .quote {
   background: $green;
 
-  p {
+  h2 {
     font-family: "PT Serif";
     font-size: 36px;
     font-weight: normal;
@@ -206,7 +210,7 @@ img {
   background-repeat: no-repeat;
   background-position: center bottom;
 
-  p {
+  h2 {
     @extend .dark-text;
     font-size: 24px;
     text-align: center;
@@ -220,6 +224,14 @@ img {
 .kinds {
   padding-top: 80px;
   margin-bottom: -100px;
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 467px) {
+    margin-bottom: 30px;
+  }
 
   &__title {
     @extend .dark-text;
@@ -423,7 +435,7 @@ img {
     }
 
     @media (max-width: 767.98px) {
-      background: none;
+      background-position: center 45%;
     }
   }
 
@@ -521,5 +533,18 @@ img {
   &__logo {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .salads,
+  .frying,
+  .benefit__cards {
+    background-image: none;
+  }
+
+  .benefit__card_left,
+  .benefit__card_bottom {
+    text-align: left;
   }
 }
