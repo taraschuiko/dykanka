@@ -255,6 +255,10 @@ img {
       padding-top: 95px;
       text-align: right;
 
+      @media (max-width: 467px) {
+        margin-bottom: 60px;
+      }
+
       p {
         position: relative;
 
