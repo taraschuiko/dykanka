@@ -350,14 +350,6 @@ img {
 .kinds-sections {
   line-height: 1.56;
 
-  @media (max-width: 467px) {
-    padding-top: 0 !important;
-  }
-
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    padding-top: 0 !important;
-  }
-
   @media (max-width: 991.98px) {
     background-image: none !important;
   }
@@ -388,6 +380,14 @@ img {
   background-position: -140px 70%;
   padding: 111px 0 23px 0;
   @extend .light-text;
+
+  @media (max-width: 467px) {
+    padding-top: 15px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-top: 15px;
+  }
 
   .kind-section__list {
     color: #bca78b;
