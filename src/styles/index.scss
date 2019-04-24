@@ -350,6 +350,18 @@ img {
 .kinds-sections {
   line-height: 1.56;
 
+  @media (max-width: 467px) {
+    padding-top: 0 !important;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-top: 0 !important;
+  }
+
+  @media (max-width: 991.98px) {
+    background-image: none !important;
+  }
+
   .kind-section__title {
     font-size: 48px;
     font-family: "PT Serif";
@@ -373,7 +385,7 @@ img {
   background-image: url("../assets/salads-bg.png");
   background-repeat: no-repeat;
   background-size: 45%;
-  background-position: -140px 76%;
+  background-position: -140px 70%;
   padding: 111px 0 23px 0;
   @extend .light-text;
 
