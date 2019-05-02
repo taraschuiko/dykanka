@@ -190,6 +190,7 @@ img {
 .quote {
   background: $green;
 
+  h1,
   h2 {
     font-family: "PT Serif";
     font-size: 36px;
@@ -553,6 +554,7 @@ img {
 }
 
 @media (max-width: 575.98px) {
+
   .salads,
   .frying,
   .benefit__cards {
