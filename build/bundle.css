@@ -1,0 +1,399 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+body {
+  background: #f7f1e3; }
+
+img {
+  max-width: 100%; }
+
+.text, .dark-text, .experience h2, .kinds__title, .kinds__subtitle, .frying, .quality, .light-text, .salads, .benefit, .contacts, .footer {
+  font-family: "Fira Sans";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left; }
+
+.dark-text, .experience h2, .kinds__title, .kinds__subtitle, .frying, .quality {
+  color: #514a3e; }
+
+.light-text, .salads, .benefit, .contacts, .footer {
+  color: #f7f1e3; }
+
+.container-fluid {
+  padding: 0; }
+
+.top-wave {
+  height: 65px;
+  width: 100%;
+  background: url(src/assets/top-wave.png);
+  margin-top: -5px; }
+
+.bottom-wave {
+  height: 65px;
+  width: 100%;
+  background: url(src/assets/bottom-wave.png); }
+
+.nav {
+  background-image: url(src/assets/bottom-wave.png);
+  background-repeat: repeat-x;
+  height: 65px;
+  align-items: center;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3; }
+  .nav__mobile-icon {
+    display: block;
+    cursor: pointer; }
+    .nav__mobile-icon img {
+      padding: 8px 4px; }
+    @media (min-width: 768px) {
+      .nav__mobile-icon {
+        display: none; } }
+  .nav__menu, .nav__language {
+    margin: 0;
+    list-style-type: none;
+    padding: 0; }
+    .nav__menu li, .nav__language li {
+      display: inline; }
+      .nav__menu li a, .nav__language li a {
+        display: inline;
+        font-family: "Fira Sans";
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        text-align: left; }
+  .nav__menu a {
+    color: #f7f1e3; }
+  .nav__language {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px; }
+    .nav__language a {
+      color: #f7f1e3; }
+    .nav__language_active {
+      color: #bca78b !important; }
+  .nav__menu li:not(:last-child) {
+    margin-right: 60px; }
+  .nav__language li:not(:last-child) {
+    margin-right: 30px; }
+  @media (max-width: 767.98px) {
+    .nav__menu {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 3;
+      background: #007531;
+      max-width: none;
+      width: 100vw;
+      padding-bottom: 56px;
+      position: fixed;
+      top: 56px;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+      .nav__menu li {
+        display: block;
+        text-align: center;
+        margin-right: 0 !important; }
+        .nav__menu li:not(:last-child) {
+          margin-bottom: 48px; }
+        .nav__menu li a {
+          padding: 10px 0; } }
+  @media (max-width: 767.98px) {
+    .nav__menu_active {
+      display: flex; } }
+
+.header {
+  background: url(src/assets/header-bg.png);
+  background-size: cover;
+  height: 663px;
+  padding-top: 65px; }
+  .header__logo {
+    margin-top: 80px; }
+  @media screen and (max-width: 992px) {
+    .header__logo img {
+      width: 100%; } }
+  .header__text {
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8e7a5b; }
+    @media (max-width: 575.98px) {
+      .header__text {
+        font-size: 20px; } }
+
+.quote {
+  background: #007531; }
+  .quote h1,
+  .quote h2 {
+    font-family: "PT Serif";
+    font-size: 36px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f7f1e3; }
+
+.experience {
+  padding-top: 78px;
+  background: url(src/assets/experience-img.png);
+  padding-bottom: 470px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+  .experience h2 {
+    font-size: 24px;
+    text-align: center; }
+  .experience img {
+    margin: 0 auto; }
+
+.kinds {
+  padding-top: 80px;
+  margin-bottom: -100px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .kinds {
+      margin-bottom: 30px; } }
+  @media (max-width: 467px) {
+    .kinds {
+      margin-bottom: 30px; } }
+  .kinds__title {
+    font-size: 24px;
+    text-align: center; }
+  .kinds__subtitle {
+    font-family: "PT Serif";
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 60px; }
+  .kinds-info {
+    margin-top: 60px; }
+    .kinds-info__left-text {
+      padding-top: 95px;
+      text-align: right; }
+      @media (max-width: 467px) {
+        .kinds-info__left-text {
+          margin-bottom: 60px; } }
+      .kinds-info__left-text p {
+        position: relative; }
+        .kinds-info__left-text p:before {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 1px;
+          background: #8e7a5b;
+          position: absolute;
+          top: 12px;
+          right: -125px;
+          z-index: 2; }
+        .kinds-info__left-text p:after {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          background: #8e7a5b;
+          position: absolute;
+          top: 8px;
+          right: -125px;
+          border-radius: 50%;
+          z-index: 2; }
+      .kinds-info__left-text p:not(:last-child) {
+        margin-bottom: 55px; }
+      .kinds-info__left-text span {
+        color: #ce1417;
+        font-weight: bold; }
+    .kinds-info__left-bottle {
+      text-align: right;
+      z-index: 1; }
+    .kinds-info__right-text {
+      padding-top: 95px; }
+      .kinds-info__right-text p {
+        position: relative; }
+        .kinds-info__right-text p:before {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 1px;
+          background: #8e7a5b;
+          position: absolute;
+          top: 12px;
+          left: -125px;
+          z-index: 2; }
+        .kinds-info__right-text p:after {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          background: #8e7a5b;
+          position: absolute;
+          top: 8px;
+          left: -125px;
+          border-radius: 50%;
+          z-index: 2; }
+      .kinds-info__right-text p:not(:last-child) {
+        margin-bottom: 254px; }
+      .kinds-info__right-text span {
+        color: #007531;
+        font-weight: bold; }
+
+.kinds-sections, .salads, .frying {
+  line-height: 1.56; }
+  @media (max-width: 991.98px) {
+    .kinds-sections, .salads, .frying {
+      background-image: none !important; } }
+  .kinds-sections .kind-section__title, .salads .kind-section__title, .frying .kind-section__title {
+    font-size: 48px;
+    font-family: "PT Serif";
+    margin-bottom: 60px; }
+  .kinds-sections .kind-section__description, .salads .kind-section__description, .frying .kind-section__description {
+    margin-bottom: 60px; }
+  .kinds-sections .kind-section__list, .salads .kind-section__list, .frying .kind-section__list {
+    padding-left: 20px;
+    list-style-type: circle;
+    margin-bottom: 60px; }
+
+.salads {
+  background: #007531;
+  background-image: url(src/assets/salads-bg.png);
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: -140px 70%;
+  padding: 111px 0 23px 0; }
+  @media (max-width: 467px) {
+    .salads {
+      padding-top: 15px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .salads {
+      padding-top: 15px; } }
+  .salads .kind-section__list {
+    color: #bca78b; }
+    .salads .kind-section__list span {
+      color: #f7f1e3; }
+
+.frying {
+  background: #f7f1e3;
+  background-image: url(src/assets/frying-bg.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 110% 75%;
+  padding: 80px 0; }
+  .frying .kind-section__list {
+    color: #bca78b; }
+    .frying .kind-section__list span {
+      color: #514a3e; }
+
+.benefit {
+  background: #007531;
+  padding: 22px 0; }
+  .benefit__title {
+    font-family: "PT Serif";
+    font-size: 36px;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 30px; }
+  .benefit__subtitle {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 60px; }
+  .benefit__cards {
+    padding-top: 30px;
+    margin-top: 25px;
+    background: url(src/assets/svg/benefits-img.svg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 32%; }
+    @media (max-width: 1199.98px) {
+      .benefit__cards {
+        background-position: center 25%; } }
+    @media (max-width: 767.98px) {
+      .benefit__cards {
+        background-position: center 45%; } }
+  .benefit__img {
+    text-align: center;
+    background: url(src/assets/svg/benefits-img.svg);
+    margin-top: -640px;
+    height: 640px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 22px 0; }
+  .benefit__card, .benefit__card_left, .benefit__card_right, .benefit__card_bottom {
+    font-weight: 300;
+    margin-bottom: 60px; }
+    .benefit__card h3, .benefit__card_left h3, .benefit__card_right h3, .benefit__card_bottom h3 {
+      font-size: 24px;
+      color: #bca78b;
+      font-weight: inherit;
+      margin-bottom: 1.1em; }
+  .benefit__card_left {
+    text-align: right; }
+  .benefit__card_right {
+    text-align: left; }
+  .benefit__card_bottom {
+    text-align: center; }
+
+.quality {
+  padding: 80px 0 56px 0; }
+  .quality__title {
+    font-family: PTSerif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 68px; }
+  .quality__text {
+    margin-bottom: 60px; }
+  .quality__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; }
+
+.contacts {
+  background: #007531;
+  padding-top: 24px; }
+  .contacts__title {
+    font-family: "PT Serif";
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 70px; }
+  .contacts__text {
+    text-align: center;
+    margin-bottom: 60px; }
+  .contacts #map {
+    width: 100%;
+    height: 500px; }
+
+.footer {
+  background: #007531;
+  padding: 30px 0; }
+  .footer__logo {
+    display: flex;
+    justify-content: flex-end; }
+
+@media (max-width: 575.98px) {
+  .salads,
+  .frying,
+  .benefit__cards {
+    background-image: none; }
+  .benefit__card_left,
+  .benefit__card_bottom {
+    text-align: left; } }
+
+
+/*# sourceMappingURL=bundle.css.map*/
