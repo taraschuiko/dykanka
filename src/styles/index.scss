@@ -168,6 +168,9 @@ img {
 
   &__logo {
     margin-top: 80px;
+    @media screen and (max-width: 992px) {
+      height: 60vh;
+    }
   }
 
   &__text {
